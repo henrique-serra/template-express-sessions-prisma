@@ -6,11 +6,10 @@ const pgSession = require('connect-pg-simple')(session);
 const pool = require('./db/pool');
 
 // Import Passport configuration
-require('./config/passport');
+// require('./config/passport');
 
 // Import routes
-const authRoutes = require('./routes/auth');
-const indexRoutes = require('./routes/index');
+const userRoutes = require('./src/routes/users');
 
 const app = express();
 
@@ -43,8 +42,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Routes
-app.use('/auth', authRoutes);
-app.use('/', indexRoutes);
+app.use('/users', userRoutes);
 
 const PORT = process.env.PORT || 3000;
 
