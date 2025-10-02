@@ -1,0 +1,39 @@
+{
+  "name": "template-express-sessions-prisma",
+  "version": "1.0.0",
+  "description": "Express template with Passport Sessions and Prisma",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "migrate": "npx prisma migrate dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/henrique-serra/template-express-sessions-prisma.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/henrique-serra/template-express-sessions-prisma/issues"
+  },
+  "homepage": "https://github.com/henrique-serra/template-express-sessions-prisma#readme",
+  "dependencies": {
+    "express": "^5.1.0",
+    "bcryptjs": "^3.0.2",
+    "dotenv": "^17.2.2",
+    "ejs": "^3.1.10",
+    "express-session": "^1.18.2",
+    "passport": "^0.7.0",
+    "passport-local": "^1.0.0",
+    "@prisma/client": "^6.16.2",
+    "pg": "^8.16.3",
+    "connect-pg-simple": "^10.0.0"
+  },
+  "devDependencies": {
+    "prettier-plugin-prisma": "^5.0.0",
+    "prisma": "^6.16.2",
+    "nodemon": "^3.1.10"
+  }
+}
